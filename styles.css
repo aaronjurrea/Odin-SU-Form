@@ -14,6 +14,16 @@ body, html {
     display: flex;
 }
 
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+
 .content-left {
     display: flex;
     flex: 1 1 0;
@@ -65,29 +75,74 @@ body, html {
 
         #text {
             position: relative;
-            width: 70%;
+            padding-left: 5%;
             padding-right: 20%;
-            bottom: 10%;
+            bottom: 15%;
         }
 
     }
 
     .form {
+        color: rgb(107, 107, 107);
+        font-size: large;
+        font-weight: bold;
+
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+
         .container {
             display: flex;
+            padding: 1% 0;
+            justify-content: left;
+            gap: 5%;
 
             .column {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                width: 40%;
+
+                gap: 2vh;
+
+                font-size: small;
+
                 div {
                     display: flex;
                     flex-direction: column;
+                    
+                    input {
+                        height: 25px;
+                    }
+
                 }
             }
         }
     }
 
     .confirmation {
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+
+        padding-top: 5%;
+        padding-left: 5%;
+        top: 5%;
+
+
+        button {
+            color: white;
+            background-color: #596D48;
+            font-size: large;
+            font-weight: bold;
+
+            width: 30%;
+            height: 25%;
+
+            border-radius: 10px;
+            border-style: none;
+        }
+        
 
     }
 
