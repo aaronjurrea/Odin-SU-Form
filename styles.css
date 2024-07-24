@@ -12,47 +12,78 @@ body, html {
     width: 100vw;
     height: 100vh;
     display: flex;
-
 }
 
 .content-left {
     display: flex;
     flex: 1 1 0;
     position: relative;
+
+    img#background {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+    
+    } 
+
+    .banner {
+        top: 20%;
+        padding: 2% 0;
+    
+        position: relative;
+        max-width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: white;
+        font-family: Odin;
+        font-size: 4rem;
+    
+        background-color: #00000090;
+
+        img#logo {
+            position: relative;
+            max-width: 20%;
+        }
+    }
+
 }
 
 .content-right {
     display: flex;
-    flex: 3 1 0;
+    flex-direction: column;
+    flex: 2.5 1 0;
+
+    .informational {
+        position: relative;
+        font-weight: bolder;
+
+        #text {
+            
+        }
+
+    }
+
+    .form {
+
+    }
+
+    .confirmation {
+
+    }
+
+    .informational, .form, .confirmation {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .informational, .confirmation {
+        background-color: rgb(235, 235, 235);
+    }
 }
 
-img#background {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
 
-} 
 
-img#logo {
-    position: relative;
-    max-width: 20%;
-}
-
-.banner {
-    top: 20%;
-    padding: 2% 0;
-
-    position: relative;
-    max-width: 100%;
-    height: fit-content;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: white;
-    font-family: Odin;
-    font-size: 4rem;
-
-    background-color: #00000090;
-}
