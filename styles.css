@@ -58,17 +58,33 @@ body, html {
     flex: 2.5 1 0;
 
     .informational {
-        position: relative;
+        display: flex;
         font-weight: bolder;
+        justify-content: center;
+        align-items: end;
 
         #text {
-            
+            position: relative;
+            width: 70%;
+            padding-right: 20%;
+            bottom: 10%;
         }
 
     }
 
     .form {
+        .container {
+            display: flex;
 
+            .column {
+                display: flex;
+                flex-direction: column;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
     }
 
     .confirmation {
